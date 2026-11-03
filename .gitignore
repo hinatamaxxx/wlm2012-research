@@ -1,0 +1,18 @@
+# Microsoft's files and anything extracted from them stay local
+targets/
+extract/
+xml/
+out/
+raw/
+ribbons/
+ev/
+*.dll
+*.exe
+*.mui
+*.thm
+*.bin
+*.resources.json
+Mail.MSMessageStore
+# tools
+__pycache__/
+venv/
