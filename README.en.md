@@ -16,6 +16,22 @@ So the plan was a mail client that **looks and behaves like the original down to
 
 The rebuilt app runs only on the family PC. It contains Microsoft's images and strings, so it is not distributed.
 
+## The rebuilt app
+
+Actual screens of the app rebuilt from the extracted values, captured window by window on Windows. The mail is sample data made for the screenshots; no names or addresses are real.
+
+![Main window with an HTML newsletter in the reading pane](screenshots/main.png)
+
+| Reply ("Re: " prefix, grey header box with English labels) | A message in its own window |
+|---|---|
+| ![Reply compose window](screenshots/compose.png) | ![Message window](screenshots/read.png) |
+
+| Options (unavailable items kept, greyed out) | File menu |
+|---|---|
+| ![Options dialog](screenshots/options.png) | ![File menu](screenshots/filemenu.png) |
+
+The icons, ribbon and layout use the values and images taken from the original resources unchanged. Underneath, mail transfer and HTML rendering are MailKit and WebView2.
+
 ## Findings
 
 | Area | What was found | Chapter |
@@ -121,7 +137,7 @@ Addresses use Ghidra's names (such as `FUN_100c1c0c`) at each DLL's image base. 
 
 - This is a personal research record and is not affiliated with Microsoft.
 - Windows Live, Windows and Microsoft are trademarks of Microsoft Corporation.
-- The repository contains no Microsoft programs, images, copies of string tables or copies of decompiled code. Only short strings (such as the "Re: " prefix) and function addresses are quoted for explanation.
+- The repository contains no Microsoft programs, image files, copies of string tables or copies of decompiled code. Only short strings (such as the "Re: " prefix) and function addresses are quoted for explanation. The screenshots (`screenshots/`) show the rebuilt app, so its look appears in them.
 - Only an installation owned by the author was analysed.
 
 ## License
